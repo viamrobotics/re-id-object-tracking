@@ -13,7 +13,7 @@ from viam.components.camera import CameraClient
 from viam.logging import getLogger
 from viam.media.video import CameraMimeType
 
-from src.config.config import ReIDObjetcTrackerConfig
+from src.config.config import ReIDObjectTrackerConfig
 from src.tracker.detector import Detector
 from src.tracker.encoder import FeatureEncoder
 from src.tracker.track import Track
@@ -25,7 +25,7 @@ LOGGER = getLogger(__name__)
 
 
 class Tracker:
-    def __init__(self, cfg: ReIDObjetcTrackerConfig, camera, debug: bool = False):
+    def __init__(self, cfg: ReIDObjectTrackerConfig, camera, debug: bool = False):
         """
         Initialize the Tracker with a Detector for person detection and tracking logic.
 
